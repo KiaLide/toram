@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>弓手簡介</title>
+    <link rel="stylesheet" href="css/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/all.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <img src="images/header_bg.jpg" alt="">
+            <img class="header-img" src="images/logo_toramonline.png" alt="">
+        </div>
+        <div class="content">
+            <p>哈喽~大家好 我是夜夜(揮手</p>
+            <img class="content-introduction-img"src="images/ToramOnlineScreenshot2018_08_31_02_00_11.png" alt="">
+            <p>因應貓貓的要求我也來寫一篇關於弓手的文章啦~<br>不過我還玩沒多久所以並不是很清楚其他人是怎麼玩的<br><br>所以我就以我自己的腳色來做介紹，並解釋我點這些技能的理由</p>
+
+            <p>我會將內容分成3個大主題 弓手基本配點&150前和150後<br><br>原因是有了4階技能後的玩法會整個大改變~所以再用等級做個區分</p>
+            <br>
+            <p>＊另外提醒大家~這篇主要是針對"純弓手"不包含練匠的喔!</p>
+            <hr>
+            <div class="basic">
+                <h2 class="red">弓手基本配點</h2>
+                <ul>首先來介紹弓手會點的3個能力!
+                    <li><span class="red">DEX</span>:玩弓必點，點1增加3atk 通常都是先滿dex再考慮點其他的</li>
+                    <li><span class="red">STR</span>:對於輸出來說第二重要的能力，點1增加1atk 並增加少量爆傷</li>
+                    <li><span class="red">CRT</span>:增加爆擊率，主要是為了達到100%爆擊</li>
+                    <li><span class="red">VIT</span>:可以增加血量!!增加存活率!!活著才有輸出!!斟酌點一些就好</li>
+                </ul>
+                <P>給大家參考我的配點~</P>
+                <img src="images/ability.png" alt="">
+                <p>我的弓手走的是極致輸出路線，所以並沒有點vit增加生存率</p>
+                <p>點滿DEX後，達成百爆需求就全部都點STR了</p><br>
+                <P>之前有人問過我爆率怎麼算，所以我就在這裡也順便說明一下~</P>
+                <p>公式是:暴擊率公式:（25+ <span class="red">CRT  /3.4</span>）*（100 + <span class="orange">暴擊率+N%</span>）% + <span class="blue">暴擊率+N</span>+ 技能補正</p><br>
+                <p>你說看不懂?沒關係!!<span class="strikethrough">我也看不懂</span></p><br>
+                <p>其實不難的啦~看我算一次就知道了!就拿我的小弓來舉例吧~</p><br>
+                <p>秘訣就是把"爆擊率+n"和"爆擊率+n%"分開</p><br>
+                <p>請看以下的裝備圖~</p>
+
+                <div class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider">
+                        <img src="images/1.png">
+                        <img src="images/2.png">
+                        <img src="images/3.png">
+                        <img src="images/4.png">
+                        <img src="images/5.png">
+                        <img src="images/6.png">
+                    </div>
+                    <div id="htmlcaption" class="nivo-html-caption">
+                        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                    </div>
+                </div>
+                <p>CRT為<span class="red">紅色</span></p><br>
+                <p>爆擊率+n%為<span class="orange">橘色</span></p><br>
+                <p>爆擊率+n為<span class="blue">藍色</span></p><br>
+                <p>所以我的爆率是 (25+<span class="red">4/3.4</span>)*(100+<span class="orange">15(法袍)+4(卦莫石)</span>)%+<span class="blue">16(弓)+15(法袍)+20(帽子)+8(獅將石)+5(魔炮石)+5(好戰分子的爆擊率提升點滿)</span>=100.15</p><br>
+                <p>剛好達到百爆~</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({ 
+    effect: 'fade',                 // Specify sets like: 'fold,fade,sliceDown' 
+    slices: 15,                       // For slice animations 
+    boxCols: 8,                       // For box animations 
+    boxRows: 4,                       // For box animations 
+    animSpeed: 500,                   // Slide transition speed 
+    pauseTime: 3000,                  // How long each slide will show 
+    startSlide: 0,                    // Set starting Slide (0 index) 
+    directionNav: true,               // Next & Prev navigation 
+    controlNav: true,                 // 1,2,3... navigation 
+    controlNavThumbs: true,          // Use thumbnails for Control Nav 
+    pauseOnHover: true,               // Stop animation while hovering 
+    manualAdvance: false,             // Force manual transitions 
+    prevText: 'Prev',                 // Prev directionNav text 
+    nextText: 'Next',                 // Next directionNav text 
+    randomStart: false,               // Start on a random slide 
+    beforeChange: function(){},       // Triggers before a slide transition 
+    afterChange: function(){},        // Triggers after a slide transition 
+    slideshowEnd: function(){},       // Triggers after all slides have been shown 
+    lastSlide: function(){},          // Triggers when last slide is shown 
+    afterLoad: function(){}           // Triggers when slider has loaded 
+});
+
+    });
+    </script>
+</body>
+</html>
