@@ -43,6 +43,7 @@ table {
 
 * {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 img {
@@ -58,6 +59,9 @@ img {
 
 .blue {
   color: blue; }
+
+.inline {
+  display: inline; }
 
 .strikethrough {
   text-decoration: line-through; }
@@ -81,6 +85,11 @@ body {
 
 .content {
   padding: 20px; }
+  .content h2, .content h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center; }
   .content .content-introduction-img {
     margin-top: 20px;
     margin-bottom: 20px; }
@@ -95,10 +104,6 @@ body {
     .content .basic img {
       margin-top: 20px;
       margin-bottom: 20px; }
-    .content .basic h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      text-align: center; }
     .content .basic ul {
       font-size: 24px;
       margin-left: 50px;
@@ -106,3 +111,8 @@ body {
       .content .basic ul li {
         margin-top: 15px;
         margin-bottom: 15px; }
+
+@media (max-width: 400px) {
+  .content .basic ul li {
+    margin-top: 25px;
+    margin-bottom: 25px; } }

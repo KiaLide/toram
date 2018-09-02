@@ -43,7 +43,9 @@ table {
 }
 
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img{
@@ -62,6 +64,10 @@ img{
 
 .blue{
     color: blue;
+}
+
+.inline{
+    display: inline;
 }
 
 .strikethrough{
@@ -93,6 +99,13 @@ body{
 
     padding: 20px;
 
+    h2,h3{
+        font-size: 26px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
     .content-introduction-img{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -116,12 +129,6 @@ body{
             margin-bottom: 20px;
         }
 
-        h2{
-            font-size: 26px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
         ul{
             font-size: 24px;
             margin-left: 50px;
@@ -130,6 +137,19 @@ body{
             li{
                 margin-top: 15px;
                 margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width:400px){
+    .content{
+        .basic{
+            ul{
+                li{
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
             }
         }
     }
