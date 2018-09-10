@@ -98,6 +98,10 @@ body{
 .content{
 
     padding: 20px;
+    img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
     h2,h3{
         font-size: 26px;
@@ -124,11 +128,6 @@ body{
     .basic{
         margin-top: 30px;
 
-        img{
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
         ul{
             font-size: 24px;
             margin-left: 50px;
@@ -151,6 +150,24 @@ body{
                     margin-bottom: 25px;
                 }
             }
+        }
+    }
+}
+
+.before150,.after150,.acrobatics{
+    h3{
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    ul{
+        font-size: 24px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+
+        li{
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
     }
 }
